@@ -21,6 +21,12 @@ class ArrayTest {
     }
 
     @Test
+    public void sumValueZeroArrayTest() {
+        int sum = Array.sum(new int[]{0});
+        assertEquals(0, sum);
+    }
+
+    @Test
     public void sumValueArrayTest() {
         int sum = Array.sum(new int[]{1, 2, 3});
         assertEquals(6, sum);
